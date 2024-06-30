@@ -1,4 +1,4 @@
-'use strict';'use strict'
+'use strict';
 
 function getDiceNumber(typeDice = 'd12') {
     let maxValueDice = 0;
@@ -15,10 +15,9 @@ function getDiceNumber(typeDice = 'd12') {
     if (!diceNumber[typeDice]) {
         console.log('Не вверно введён тип dice');
         return null
-    } else {
-        maxValueDice = Number(diceNumber[typeDice])
-        console.log(Math.floor(Math.random() * (maxValueDice - 1 + 1)) + 1);
     }
+    maxValueDice = Number(diceNumber[typeDice]);
+    console.log(Math.floor(Math.random() * maxValueDice) + 1);
 }
 
 getDiceNumber('d10')
