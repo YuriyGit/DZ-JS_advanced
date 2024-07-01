@@ -1,0 +1,49 @@
+body {
+    background-color: #1c1b21;
+    text-align: center;
+    color: white;
+}
+
+button, .output{
+    color: white;
+    border: 1px solid #333;
+    background: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.output{
+    background: white;
+    color: #1c1b21;
+}
+.button:hover {
+    background: grey;
+}
+
+.button:active {
+    background: #2d2222;
+}
+
+.wrapper {
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.wrapper > div {
+
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.active{
+    background: #6c38cc;
+}
