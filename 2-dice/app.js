@@ -1,16 +1,15 @@
 'use strict';
 
 function getDiceNumber(typeDice = 'd12') {
-    const diceNumber =
-        {
+    const diceNumber = {
             d4: 4,
             d6: 6,
             d8: 8,
             d10: 10,
             d12: 12,
             d16: 16,
-            d20: 20,
-        };
+            d20: 20,        
+    };
 
     if (typeDice in diceNumber) {
         console.log(Math.floor(Math.random() * diceNumber[typeDice]) + 1);
